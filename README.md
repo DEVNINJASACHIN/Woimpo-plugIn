@@ -23,6 +23,6 @@ The WOIMpo Plugin simplifies the management of your WooCommerce store, saving yo
   
 Get started with the WOIMpo Plugin today and unlock the full potential of your WooCommerce store!
 
-**Note:** This plugin was developed by Sachin Sharma and is actively maintained and supported. For more information and updates, please visit [WOIMpo Plugin GitHub Repository](https://github.com/DEVNINJASACHIN/https-github.com-devninjasachin-woimpo-plugin).
+**Note:** This plugin was developed by Sachin Sharma and is actively maintained and supported. For more information and updates, please visit [[WOIMpo Plugin GitHub Repository](https://github.com/DEVNINJASACHIN/https-github.com-devninjasachin-woimpo-plugin).](https://github.com/DEVNINJASACHIN/Woimpo-plugIn)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
