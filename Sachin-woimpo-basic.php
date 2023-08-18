@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: WOIMpo
-Plugin URI: https://your-plugin-uri.com
+Plugin URI: https://github.com/DEVNINJASACHIN/Woimpo-plugIn
 Description: Import WooCommerce attributes and products from API, create categories, and provide license key security.
 Version: 2.1
 Author: Sachin Sharma
-Author URI: https://devninjasachin.com
+Author URI: https://connectwithsachin.000webhostapp.com/
 License: GPL2
 */
 
