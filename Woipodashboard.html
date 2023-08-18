@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOIMpo Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .dashboard {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .task-buttons {
+      margin-top: 20px;
+    }
+    .task-button {
+      margin-right: 10px;
+    }
+    .status {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .loading {
+      display: none;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>WOIMpo Dashboard</h1>
+    <form id="licenseForm">
+      <label for="licenseKey">License Key:</label>
+      <input type="text" id="licenseKey" name="licenseKey" placeholder="Enter your license key">
+      <button type="button" id="activateButton">Activate Plugin</button>
+    </form>
+    <div class="task-buttons">
+      <button class="task-button" id="importAttributesButton">Import Attributes</button>
+      <button class="task-button" id="importProductsButton">Import Products</button>
+      <button class="task-button" id="createCategoriesButton">Create Categories</button>
+    </div>
+    <div class="status">
+      Status: <span id="statusText">Idle</span><span class="loading">Loading...</span>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("licenseForm");
+      const licenseKeyInput = document.getElementById("licenseKey");
+      const activateButton = document.getElementById("activateButton");
+      const importAttributesButton = document.getElementById("importAttributesButton");
+      const importProductsButton = document.getElementById("importProductsButton");
+      const createCategoriesButton = document.getElementById("createCategoriesButton");
+      const statusText = document.getElementById("statusText");
+      const loadingSpinner = document.querySelector(".loading");
+
+      activateButton.addEventListener("click", function() {
+        // Handle license activation as before
+      });
+
+      function performTask(taskName, callback) {
+        loadingSpinner.style.display = "inline-block";
+        statusText.textContent = `Running ${taskName}...`;
+
+        // Simulate task execution
+        setTimeout(function() {
+          loadingSpinner.style.display = "none";
+          statusText.textContent = `Completed ${taskName}`;
+          if (typeof callback === "function") {
+            callback();
+          }
+        }, 2000);
+      }
+
+      importAttributesButton.addEventListener("click", function() {
+        performTask("Importing Attributes", function() {
+          // Perform AJAX request to trigger import
+        });
+      });
+
+      importProductsButton.addEventListener("click", function() {
+        performTask("Importing Products", function() {
+          // Perform AJAX request to trigger import
+        });
+      });
+
+      createCategoriesButton.addEventListener("click", function() {
+        performTask("Creating Categories", function() {
+          // Perform AJAX request to trigger category creation
+        });
+      });
+    });
+  </script>
+</body>
+</html>
