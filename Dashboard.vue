@@ -1,3 +1,4 @@
+< >
 <template>
   <div class="dashboard">
     <h1>WOIMpo Dashboard</h1>
