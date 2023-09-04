@@ -1,4 +1,4 @@
-< >
+< 
 <template>
   <div class="dashboard">
     <h1>WOIMpo Dashboard</h1>
@@ -70,4 +70,5 @@ export default {
 <style scoped>
 /* Styles as before */
 </style>
+>
 >
