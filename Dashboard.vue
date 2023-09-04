@@ -70,3 +70,4 @@ export default {
 <style scoped>
 /* Styles as before */
 </style>
+>
