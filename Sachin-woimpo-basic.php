@@ -193,4 +193,8 @@ function woimpo_add_settings_page() {
   add_menu_page('WOIMpo Settings', 'WOIMpo', 'manage_options', 'woimpo_settings', 'woimpo_settings_page');
 }
 add_action('admin_menu', 'woimpo_add_settings_page');
+
+
+
+
 >>
