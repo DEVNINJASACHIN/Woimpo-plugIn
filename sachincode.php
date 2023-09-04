@@ -198,7 +198,6 @@ add_action('admin_menu', 'woimpo_add_settings_page');
 
 // Schedule import and category creation tasks
 
-
 function woimpo_schedule_tasks() {
   if (!wp_next_scheduled('woimpo_import_woocommerce_attributes')) {
     wp_schedule_event(time(), 'daily', 'woimpo_import_woocommerce_attributes');
@@ -213,3 +212,4 @@ function woimpo_schedule_tasks() {
   }
 }
 add_action('wp', 'woimpo_schedule_tasks');
+>
