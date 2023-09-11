@@ -26,3 +26,5 @@ export default new Vuex.Store({
     // Define your actions here
   }
 });
+
+>
