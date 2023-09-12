@@ -21,6 +21,7 @@ function import_woocommerce_attributes() {
     return;
   }
 
+  
   $attributes = json_decode(wp_remote_retrieve_body($api_response), true);
 
   if (!is_array($attributes)) {
